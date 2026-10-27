@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>arc-rclone privacy policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 16px/1.6 system-ui, sans-serif; max-width: 40rem; margin: 3rem auto; padding: 0 1rem; }
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+</style>
+</head>
+<body>
+<h1>arc-rclone privacy policy</h1>
+<p><em>Effective 17 October 2026.</em></p>
+
+<p>arc-rclone is a private backup tool with one user: the owner of the Google account it is
+connected to. It runs on that owner's own computer. This policy describes how it handles
+Google user data.</p>
+
+<h2>What it accesses</h2>
+<p>arc-rclone requests the Google Drive <code>drive.file</code> permission. With it, the tool can see and
+change only the files that arc-rclone itself creates in the owner's Drive. It cannot read, list,
+or change any other files in that Drive.</p>
+
+<h2>How it uses the data</h2>
+<p>It uses that access for one thing only: storing and reading the owner's backup files. Before
+upload, the backup is encrypted on the owner's computer with
+<a href="https://restic.net/">restic</a>. The encryption key never leaves the owner's control.</p>
+
+<h2>Where data is stored</h2>
+<p>Backup files are stored only in the owner's own Google Drive. The sign-in token for Google is stored
+only on the owner's computer. arc-rclone runs no servers and stores no data anywhere else.</p>
+
+<h2>Sharing</h2>
+<p>arc-rclone does not share, sell, or transfer Google user data to anyone. It does not use the data for
+advertising, analytics, or training AI or machine-learning models.</p>
+
+<h2>Revoking access</h2>
+<p>The owner can revoke arc-rclone's access at any time at
+<a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
+Deleting the backup files from Drive removes the stored data.</p>
+
+<h2>Contact</h2>
+<p>Questions: through the <a href="https://github.com/arcbuilder-ai">arcbuilder-ai</a> GitHub account.</p>
+</body>
+</html>
